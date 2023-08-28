@@ -3,7 +3,7 @@
  * _strspn - Entry point
  * @s: input
  * @accept: input
- * Return: Always 0 (Success)
+ * Return: Always 0
  */
 unsigned int _strspn(char *s, char *accept)
 {
@@ -12,7 +12,7 @@ int r;
 
 while (*s)
 {
-for (r = 0; accept[r]; r++)
+for (r = 0 ; accept[r]; r++)
 {
 if (*s == accept[r])
 {
@@ -23,5 +23,6 @@ else if (accept[r + 1] == '\0')
 return (n);
 }
 s++;
+}
 return (n);
 }
